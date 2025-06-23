@@ -1,0 +1,106 @@
+.projects-container {
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-shadow: 0 0 12px #ffdf6f;
+    margin-bottom: 40px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  .flip-card {
+    background: transparent;
+    perspective: 1000px;
+    width: 260px;
+    height: 200px;
+    margin: auto;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    backface-visibility: hidden;
+    box-shadow: 0 8px 32px rgba(0, 255, 255, 0.15);
+  }
+  
+  .flip-front {
+    background: linear-gradient(135deg, #00f5d4, #9b5de5);
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .flip-back {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .flip-back p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  .flip-back ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flip-back ul li {
+    background: #00f5d4;
+    color: #111;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  /* Entry animation */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

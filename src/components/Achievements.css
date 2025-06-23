@@ -1,0 +1,82 @@
+.achievements-container {
+  padding: 60px 20px;
+  background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #ffda6f;
+}
+
+.achievements-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 30px;
+  border-left: 4px solid #ffd700;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  animation: scrollReveal 1s ease both;
+}
+
+.timeline-item:hover {
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3), 0 0 30px rgba(0, 255, 200, 0.2);
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.timeline-icon {
+  font-size: 2rem;
+  animation: pulse 2s infinite;
+}
+
+.timeline-content h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #00f5d4;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 5px;
+}
+
+/* Reveal from bottom */
+@keyframes scrollReveal {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Pulse icon animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
