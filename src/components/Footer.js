@@ -6,6 +6,7 @@ import {
   faLinkedin,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -16,6 +17,16 @@ function Footer() {
       </div>
 
       <div className="footer-right">
+        {/* === Phone === */}
+        <a
+          href="tel:+917207097501"      /* ← updated number */
+          className="footer-icon"
+          title="Call Hareesh"
+        >
+          <FontAwesomeIcon icon={faPhone} />
+        </a>
+
+        {/* === Email === */}
         <a
           href="mailto:hareeshamanchi@gmail.com"
           target="_blank"
@@ -25,6 +36,8 @@ function Footer() {
         >
           <FontAwesomeIcon icon={faGoogle} />
         </a>
+
+        {/* === GitHub === */}
         <a
           href="https://github.com/hareeshamanchi"
           target="_blank"
@@ -34,6 +47,8 @@ function Footer() {
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
+
+        {/* === LinkedIn === */}
         <a
           href="https://in.linkedin.com/in/hareeshamanchi"
           target="_blank"
