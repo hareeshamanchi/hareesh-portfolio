@@ -8,7 +8,7 @@ function Home() {
         <h1 className="glow-name">Hi, I’m <span>Hareesh Amanchi</span></h1>
         <p className="tagline">Aspiring AI & Web Developer | Creative Technologist 🚀</p>
         <p className="summary">
-          I’m a passionate Computer Science undergrad from MITS, 
+          I’m a passionate Computer Science undergraduate  from MITS, 
           specialized in Artificial Intelligence. I love building impactful web projects, 
           solving real-world problems, and scripting new ideas!
         </p>
