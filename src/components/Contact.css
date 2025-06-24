@@ -3,6 +3,7 @@
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   color: white;
   text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scroll on small screens */
 }
 
 .section-title {
@@ -17,11 +18,13 @@
   gap: 30px;
   max-width: 1000px;
   margin: auto;
+  padding: 0 15px;
+  grid-template-columns: 1fr; /* Stack items on small screens */
 }
 
 @media (min-width: 768px) {
   .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium+ screens */
   }
 }
 
@@ -49,15 +52,22 @@
   color: #ffd700;
   text-decoration: none;
   font-weight: bold;
+  word-break: break-word;
 }
 
 .contact-cta {
-  grid-column: span 2;
+  grid-column: span 1;
   background: rgba(255, 255, 255, 0.1);
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 40px rgba(255, 215, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .contact-cta {
+    grid-column: span 2;
+  }
 }
 
 .contact-cta h3 {
@@ -85,7 +95,7 @@
   box-shadow: 0 0 16px rgba(0, 255, 200, 0.6);
 }
 
-/* Entrance animations */
+/* Fade-in animations */
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
