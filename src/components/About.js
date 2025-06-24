@@ -11,7 +11,7 @@ function About() {
           <h3>Personal Info</h3>
           <ul>
             <li><strong>Name:</strong> Hareesh Amanchi</li>
-            <li><strong>DOB:</strong> 30 December 2004</li>
+            
             <li><strong>Location:</strong> Madanapalle, Andhra Pradesh</li>
             <li><strong>Languages:</strong> English, Telugu</li>
             <li><strong>Email:</strong> hareeshamanchi@gmail.com</li>
